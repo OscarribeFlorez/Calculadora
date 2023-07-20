@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        .container-calc{
+            background-color: #ccc;
+            padding: 25px;
+            width: 450px;
+            display: inline-block;
+            border-radius: 9px;
+            border:2px solid #000;
+            box-shadow: 0px 0px 7px 0px #009eb7;
+        }
+        .btn-calc{
+            width: 100%;
+            height: 65px;
+            font-size: 25px;
+        }
+        .resultado{
+            font-size: 45px;
+            margin-top: 45px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col text-center">
+                <h1>Calculadora</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <div class="container-calc text-end">
+                    <h2 class="resultado" id="resultado">0</h2>
+                    <span class="historicos" id="historicos">0</span>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn btn-danger btn-calc" onclick="LimptNumbers()">AC</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-danger btn-calc">X</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-danger btn-calc" onclick="PorctNumbers()">%</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-warning btn-calc" onclick="DiviNumbers()">/</button>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc"  onclick="ConcatNumber('7')">7</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc" onclick="ConcatNumber('8')">8</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc" onclick="ConcatNumber('9')">9</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-warning btn-calc" onclick="MultNumbers()">X</button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc" onclick="ConcatNumber('4')">4</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc" onclick="ConcatNumber('5')">5</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc" onclick="ConcatNumber('6')">6</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-warning btn-calc" onclick="RestNumbers()">-</button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc" onclick="ConcatNumber('1')">1</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc" onclick="ConcatNumber('2')">2</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc" onclick="ConcatNumber('3')">3</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-warning btn-calc" onclick="SumNumbers()">+</button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc" onclick="ConcatNumber('0')">0</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-success btn-calc">.</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-info btn-calc" onclick="ResultEqual()">=</button>
+                        </div>                        
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        
+                
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="calculadora.js"></script>
+
+</body>
+</html>
